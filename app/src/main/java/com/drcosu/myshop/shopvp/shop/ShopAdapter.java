@@ -30,9 +30,9 @@ public class ShopAdapter extends DileberAdapter<ShopAdapter.ShopHolder> implemen
     }
 
 //    ShopContract.Presenter shopPresenter = null;
-//    public ShopAdapter(ShopContract.Presenter shopPresenter){
-//        this.shopPresenter = shopPresenter;
-//    }
+    public ShopAdapter(ShopContract.Presenter shopPresenter){
+        super(shopPresenter);
+    }
 
     @Override
     protected void addViewHolderData(ShopHolder holder, int position) {

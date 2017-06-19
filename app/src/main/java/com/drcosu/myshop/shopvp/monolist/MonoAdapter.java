@@ -23,6 +23,11 @@ import java.util.List;
 public class MonoAdapter extends DileberAdapter<MonoAdapter.MonoHolder> implements IDileberData<MonoModel>{
 
     List<MonoModel> mValue = new ArrayList<>();
+
+    public MonoAdapter(MonoListContract.Presenter mPresenter){
+        super(mPresenter);
+    }
+
 //    MonoListContract.Presenter mPresenter;
 //    public MonoAdapter(MonoListContract.Presenter mPresenter){
 //        this.mPresenter = mPresenter;

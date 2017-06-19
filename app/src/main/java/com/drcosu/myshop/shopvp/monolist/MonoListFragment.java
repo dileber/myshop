@@ -14,6 +14,7 @@ import com.drcosu.myshop.R;
 import com.drcosu.myshop.base.BaseShopFragment;
 import com.drcosu.myshop.data.wrapper.MonosWrapper;
 import com.drcosu.myshop.shopvp.mono.EditMonoActivity;
+import com.drcosu.ndileber.mvp.presenter.BasePresenter;
 
 public class MonoListFragment extends BaseShopFragment implements MonoListContract.View{
 

@@ -13,6 +13,6 @@ public class SHOPConfig extends BaseConfiger{
         BUG_STATIC = true;
     }
 
-    public final static String URL = "http://www.dreamsoso.com/";
+    public final static String URL = "http://shop.dreamsoso.com/";
 
 }

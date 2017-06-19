@@ -28,9 +28,9 @@ public class UserAdapter extends DileberAdapter<UserAdapter.UserHolder> implemen
 
 //    UserContract.Presenter mPresenter;
 //
-//    public UserAdapter(UserContract.Presenter mPresenter){
-//        this.mPresenter = mPresenter;
-//    }
+    public UserAdapter(UserContract.Presenter mPresenter){
+        super(mPresenter);
+    }
 
     @Override
     protected void addViewHolderData(UserHolder holder, int position) {
