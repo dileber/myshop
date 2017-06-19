@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="horizontal"
+    android:id="@+id/dialog">
+ <TextView
+     android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:text="数量：" />
+ <EditText android:layout_height="wrap_content"
+  android:layout_width="wrap_content"
+     android:id="@+id/num"
+     android:inputType="number"
+     android:minWidth="100dip"/>
+</LinearLayout>

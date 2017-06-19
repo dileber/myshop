@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.drcosu.myshop.shopvp.login.LoginActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.jucaibang.manager.jcbmanager.test.login.LoginActivity"
+        tools:showIn="@layout/activity_login">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOP手机端后台管理"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            />
+
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="姓名"
+            android:layout_margin="5dp"
+            android:id="@+id/login_name"
+            android:textSize="18sp"
+            android:background="@drawable/writer_ground_background"
+            android:layout_gravity="right" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:layout_margin="5dp"
+            android:id="@+id/login_pass"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:background="@drawable/writer_ground_background"
+            android:layout_gravity="right" />
+
+
+
+
+        <TextView
+            android:id="@+id/login_button"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/dileber_white"
+            android:text="登录"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.drcosu.myshop.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        tools:showIn="@layout/activity_main">
+
+        <!--<com.drcosu.ndileber.view.image.CropImageView-->
+            <!--android:id="@+id/cropable_image_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+        <com.kevin.crop.view.UCropView
+            android:id="@+id/ucrop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/btn_selector"
+                android:textColor="@color/dileber_white"
+                android:textSize="18sp"
+                android:text="取消"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                />
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+
+                />
+            <TextView
+                android:id="@+id/ok_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:text="选取"
+                android:gravity="center"
+                android:background="@drawable/btn_selector"
+                android:textColor="@color/dileber_white"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

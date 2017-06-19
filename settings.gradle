@@ -1,0 +1,2 @@
+include ':app', ':dileber'
+project(':dileber').projectDir = new File(settingsDir, "../../../../AndroidStudioProjects/NewTest/ndileber")
